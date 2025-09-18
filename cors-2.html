@@ -5,7 +5,7 @@
 <script>
 (async () => {
   try {
-    const resp = await fetch("https://api.woox.io/v3/account/info", {
+    const resp = await fetch("https://api.woox.io/woo/account", {
       credentials: "include"
     });
     const text = await resp.text();
