@@ -2,7 +2,7 @@
 var req = new XMLHttpRequest();
 req.onload = reqListener;
 req.open('get','https://api.woox.io/userauth/account/ip_info',true);
-req.withCredentials = true;
+req.withCredentials = false;
 req.send();
 
 function reqListener() {
